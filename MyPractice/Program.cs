@@ -12,8 +12,17 @@ namespace Hello
         }
         public static void Main(string[] args)
         {
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(RecFac(a));
+            try
+            {
+                Console.Write("Enter a number : ");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(RecFac(a));
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
     }
 }
