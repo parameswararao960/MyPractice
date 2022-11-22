@@ -16,7 +16,14 @@ namespace Hello
             {
                 Console.Write("Enter a number : ");
                 int a = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(RecFac(a));
+                if (a >= 0)
+                {
+                    Console.WriteLine(RecFac(a));
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a non-negative number");
+                }
             }
             catch(Exception ex)
             {
